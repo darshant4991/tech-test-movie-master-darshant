@@ -1,0 +1,26 @@
+{
+  "1": {
+    "imdbId": "1",
+    "Title": "Encanto",
+    "Year": "2016",
+    "Actors": null,
+    "imdbRating": null,
+    "LastUpdated": "0001-01-01T00:00:00"
+  },
+  "2": {
+    "imdbId": "2",
+    "Title": "Inception",
+    "Year": "2016",
+    "Actors": null,
+    "imdbRating": null,
+    "LastUpdated": "0001-01-01T00:00:00"
+  },
+  "f8008991-78e1-4d46-b987-cc4a7b0c3e55": {
+    "imdbId": "f8008991-78e1-4d46-b987-cc4a7b0c3e55",
+    "Title": "Test Movie",
+    "Year": "2022",
+    "Actors": "John Doe, Jane Smith",
+    "imdbRating": "8.0",
+    "LastUpdated": "2023-02-15T00:18:52.6462669+00:00"
+  }
+}

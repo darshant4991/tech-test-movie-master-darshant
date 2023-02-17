@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "eRdxc60BFSB7wLJutiKJhXL5UTATMdZf6gwymS5JQOOc8/iQelujUGWRLu7E8dmcOtHBVUfX4Z8FzN22DLQN0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Darshan\\source\\repos\\tech-test-movie-master-darshant\\MovieMaster.Data\\MovieMaster.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Darshan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Darshan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Data\bin\Debug\netstandard2.1\MovieMaster.Data.deps.json
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Data\bin\Debug\netstandard2.1\MovieMaster.Data.dll
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Data\bin\Debug\netstandard2.1\MovieMaster.Data.pdb
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Data\obj\Debug\netstandard2.1\MovieMaster.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Data\obj\Debug\netstandard2.1\MovieMaster.Data.AssemblyInfoInputs.cache
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Data\obj\Debug\netstandard2.1\MovieMaster.Data.AssemblyInfo.cs
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Data\obj\Debug\netstandard2.1\MovieMaster.Data.csproj.CoreCompileInputs.cache
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Data\obj\Debug\netstandard2.1\MovieMaster.Data.dll
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Data\obj\Debug\netstandard2.1\MovieMaster.Data.pdb

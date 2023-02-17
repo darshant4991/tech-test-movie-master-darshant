@@ -62,5 +62,33 @@ namespace MovieMaster.Service
                 Movie = _mapper.Map<Movie>(result)
             };
         }
+
+        //#Task2
+        public async Task<IEnumerable<Movie>> FindMoviesByYearAsync(string year)
+        {
+            var movies = await _movieRepository.GetAllMoviesByYearAsync(year);
+            return movies.Select(m => _mapper.Map<Movie>(m)).Where(m => m.Year == year);
+        }
+
+        //#Task3
+        public async Task<AddMovieResult> AddMovieAsync(string id, Movie movie)
+        {
+
+            var movieDto = _mapper.Map<MovieDto>(movie);
+
+            // Update the movie
+            var result = await _movieRepository.AddMovieAsync(id, movieDto);
+            if (result == null)
+            {
+                return new AddMovieResult { Status = AddMovieStatus.Error };
+            }
+
+            // Return success
+            return new AddMovieResult
+            {
+                Status = AddMovieStatus.Added,
+                Movie = _mapper.Map<Movie>(result)
+            };
+        }
     }
 }

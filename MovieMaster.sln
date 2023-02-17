@@ -1,21 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieMaster", "MovieMaster\MovieMaster.csproj", "{F664A896-B6F1-48C8-A008-B8980CB1CCA6}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieMaster", "MovieMaster\MovieMaster.csproj", "{F664A896-B6F1-48C8-A008-B8980CB1CCA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieMaster.Service", "MovieMaster.Service\MovieMaster.Service.csproj", "{AE0ECD58-D230-4452-B760-47377F6D29EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieMaster.Service", "MovieMaster.Service\MovieMaster.Service.csproj", "{AE0ECD58-D230-4452-B760-47377F6D29EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieMaster.Data", "MovieMaster.Data\MovieMaster.Data.csproj", "{D1D2E4B2-4B71-474A-80F3-2E7C2A50D4DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieMaster.Data", "MovieMaster.Data\MovieMaster.Data.csproj", "{D1D2E4B2-4B71-474A-80F3-2E7C2A50D4DC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{51683BD0-21AD-4347-90FF-8D475DE231C7}"
 	ProjectSection(SolutionItems) = preProject
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieMaster.Data.Tests", "MovieMaster.Data.Tests\MovieMaster.Data.Tests.csproj", "{5D20FAFE-8D16-4205-A913-472BA85E2845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieMaster.Data.Tests", "MovieMaster.Data.Tests\MovieMaster.Data.Tests.csproj", "{5D20FAFE-8D16-4205-A913-472BA85E2845}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{647108F2-4444-4F3D-B73C-FC6A9EEEAB07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieMaster.Service.Tests", "MovieMaster.Service.Tests\MovieMaster.Service.Tests.csproj", "{AC920C33-BC85-4960-98FE-ED988596CDF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieMaster.Service.Tests", "MovieMaster.Service.Tests\MovieMaster.Service.Tests.csproj", "{AC920C33-BC85-4960-98FE-ED988596CDF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,11 +47,17 @@ Global
 		{AC920C33-BC85-4960-98FE-ED988596CDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC920C33-BC85-4960-98FE-ED988596CDF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F664A896-B6F1-48C8-A008-B8980CB1CCA6} = {647108F2-4444-4F3D-B73C-FC6A9EEEAB07}
-		{D1D2E4B2-4B71-474A-80F3-2E7C2A50D4DC} = {647108F2-4444-4F3D-B73C-FC6A9EEEAB07}
 		{AE0ECD58-D230-4452-B760-47377F6D29EC} = {647108F2-4444-4F3D-B73C-FC6A9EEEAB07}
+		{D1D2E4B2-4B71-474A-80F3-2E7C2A50D4DC} = {647108F2-4444-4F3D-B73C-FC6A9EEEAB07}
 		{5D20FAFE-8D16-4205-A913-472BA85E2845} = {647108F2-4444-4F3D-B73C-FC6A9EEEAB07}
 		{AC920C33-BC85-4960-98FE-ED988596CDF8} = {647108F2-4444-4F3D-B73C-FC6A9EEEAB07}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52FADFCB-B023-46D2-9A26-E20A039B7B25}
 	EndGlobalSection
 EndGlobal

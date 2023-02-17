@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieMaster</name>
+    </assembly>
+    <members>
+        <member name="T:MovieMaster.Controllers.MovieController">
+            <summary>
+            Handles CRUD operations on movies.
+            </summary>
+        </member>
+        <member name="M:MovieMaster.Controllers.MovieController.#ctor(Microsoft.Extensions.Logging.ILogger{MovieMaster.Controllers.MovieController},MovieMaster.Service.Interfaces.IMovieService)">
+            <summary>
+            Creates a new instance of <see cref="T:MovieMaster.Controllers.MovieController"/>.
+            </summary>
+            <param name="logger">An instance of <see cref="T:Microsoft.Extensions.Logging.ILogger"/>.</param>
+            <param name="movieService">An instance of <see cref="T:MovieMaster.Service.Interfaces.IMovieService"/>.</param>
+        </member>
+        <member name="M:MovieMaster.Controllers.MovieController.GetAsync">
+            <summary>
+            Retrieves a list of movies
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieMaster.Controllers.MovieController.GetByIdAsync(System.String)">
+            <summary>
+            Retrieves a specific movie by ID.
+            </summary>
+            <param name="id">ID of the movie to get.</param>
+            <returns>A Movie.</returns>
+        </member>
+        <member name="M:MovieMaster.Controllers.MovieController.UpdateMovieAsync(System.String,MovieMaster.Service.Model.Movie)">
+            <summary>
+            Update a movie.
+            </summary>
+            <param name="id">ID of the movie.</param>
+            <param name="movie">Details of movie.</param>
+            <returns>The updated Movie.</returns>
+        </member>
+        <member name="M:MovieMaster.Controllers.MovieController.GetByYearAsync(System.String)">
+            <summary>
+            Retrieves a list of movies by year
+            </summary>
+            <param name="year">Year of the movies to get.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieMaster.Controllers.MovieController.AddMovieAsync(System.String,MovieMaster.Service.Model.Movie)">
+            <summary>
+            Add a movie.
+            </summary>
+            <param name="title">Title of the movie.</param>
+            <param name="movie">Details of movie.</param>
+            <returns>The Added Movie.</returns>
+        </member>
+    </members>
+</doc>

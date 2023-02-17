@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,9 +11,11 @@ namespace MovieMaster.Data.Tests
     {
         private readonly List<MovieDto> _movies = new List<MovieDto>
         {
-            new MovieDto { Id = "1", Title = "Encanto" },
-            new MovieDto { Id = "2", Title = "Inception" },
+                new MovieDto { Id = "1", Title = "Encanto", Year="2016" },
+                new MovieDto { Id = "2", Title = "Inception", Year="2016" },
         };
+
+
         private MovieRepository _fixture;
 
         [SetUp]
@@ -59,6 +62,51 @@ namespace MovieMaster.Data.Tests
             });
 
             Assert.AreEqual("New Title", result.Title);
+        }
+
+        //#Test2
+        [Test]
+        public async Task GetAllMoviesByYearAsync_ReturnsAllMovies()
+        {
+            var result = await _fixture.GetAllMoviesByYearAsync("2016");
+            Assert.AreEqual(2, result.Count());
+        }
+
+        //#Test3
+        [Test]
+        public async Task AddMovieAsync_ReturnsNullWhenMovieDetailsNotProvided()
+        {
+            // Act
+            var result = await _fixture.AddMovieAsync("", null);
+
+            // Assert
+            Assert.IsNull(result);
+        }
+
+        //#Test3
+        [Test]
+        public async Task AddMovieAsync_AddsMovieToDictionary()
+        {
+            // Arrange
+            var movie = new MovieDto
+            {
+                Title = "Test Movie",
+                Year = "2022",
+                Actors = "John Doe, Jane Smith",
+                Rating ="8.0",
+                LastUpdated = DateTime.Now
+            };
+
+            // Act
+            var result = await _fixture.AddMovieAsync(movie.Title, movie);
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(movie.Title, result.Title);
+            Assert.AreEqual(movie.Year, result.Year);
+            Assert.AreEqual(movie.Actors, result.Actors);
+            Assert.AreEqual(movie.Rating, result.Rating);
+            Assert.AreEqual(movie.LastUpdated, result.LastUpdated);
         }
     }
 }

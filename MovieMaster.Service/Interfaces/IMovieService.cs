@@ -25,5 +25,24 @@ namespace MovieMaster.Service.Interfaces
         /// <param name="movie">Movie to update.</param>
         /// <returns>The updated movie.</returns>
         Task<UpdateMovieResult> UpdateMovieAsync(string id, Movie movie);
+
+        //#Task2
+        /// <summary>
+        /// Gets a movies by the specific Year.
+        /// </summary>
+        /// <param name="year">Year of the movie.</param>
+        /// <returns>An enumerable list of movies for given year.</returns>
+        Task<IEnumerable<Movie>> FindMoviesByYearAsync(string year);
+
+        //#Task3
+        /// <summary>
+        /// Add the movie.
+        /// </summary>
+        /// <param name="movie">Movie to update.</param>
+        /// <returns>The Added movie.</returns>
+        Task<AddMovieResult> AddMovieAsync(string title, Movie movie);
+
+
+
     }
 }

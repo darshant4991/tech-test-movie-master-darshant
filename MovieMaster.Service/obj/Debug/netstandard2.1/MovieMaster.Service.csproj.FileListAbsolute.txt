@@ -1,0 +1,13 @@
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\bin\Debug\netstandard2.1\MovieMaster.Service.deps.json
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\bin\Debug\netstandard2.1\MovieMaster.Service.dll
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\bin\Debug\netstandard2.1\MovieMaster.Service.pdb
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\bin\Debug\netstandard2.1\MovieMaster.Data.dll
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\bin\Debug\netstandard2.1\MovieMaster.Data.pdb
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\obj\Debug\netstandard2.1\MovieMaster.Service.csproj.AssemblyReference.cache
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\obj\Debug\netstandard2.1\MovieMaster.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\obj\Debug\netstandard2.1\MovieMaster.Service.AssemblyInfoInputs.cache
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\obj\Debug\netstandard2.1\MovieMaster.Service.AssemblyInfo.cs
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\obj\Debug\netstandard2.1\MovieMaster.Service.csproj.CoreCompileInputs.cache
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\obj\Debug\netstandard2.1\MovieMaster.Service.csproj.CopyComplete
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\obj\Debug\netstandard2.1\MovieMaster.Service.dll
+C:\Users\Darshan\source\repos\tech-test-movie-master-darshant\MovieMaster.Service\obj\Debug\netstandard2.1\MovieMaster.Service.pdb

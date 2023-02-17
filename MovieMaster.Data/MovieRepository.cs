@@ -17,10 +17,10 @@ namespace MovieMaster.Data
     public sealed class MovieRepository : IMovieRepository
     {
         private readonly Dictionary<string, MovieDto> _movies;
-
+        private readonly string _filePath = "Movies.json"; //#Task3
         public MovieRepository()
         {
-            var file = File.ReadAllText("Movies.json");
+            var file = File.ReadAllText(_filePath);// ("Movies.json");//#Task3
             var movieList = JsonConvert.DeserializeObject<List<MovieDto>>(file);
             _movies = movieList.ToDictionary(m => m.Id);
         }
@@ -56,5 +56,37 @@ namespace MovieMaster.Data
             
             return Task.FromResult<MovieDto>(null);
         }
+
+        //#Task2
+        public Task<IEnumerable<MovieDto>> GetAllMoviesByYearAsync(string year)
+        {
+            return Task.FromResult(_movies.Values.Where(m => m.Year == year));
+        }
+
+        //#Task3
+        public Task<MovieDto> AddMovieAsync(string title, MovieDto details)
+        {
+
+            if (details == null || string.IsNullOrEmpty(details.Title))
+            {
+                return Task.FromResult<MovieDto>(null);
+            }
+
+            // Generate a new ID if it is not provided
+            if (string.IsNullOrWhiteSpace(details.Id))
+            {
+                details.Id = Guid.NewGuid().ToString();
+            }
+
+            // Add the movie to the dictionary
+            _movies.Add(details.Id, details);
+
+            // Write the updated dictionary back to the JSON file
+            string updatedJson = JsonConvert.SerializeObject(_movies, Formatting.Indented);
+            System.IO.File.WriteAllText(_filePath, updatedJson);
+
+            return Task.FromResult(details);
+        }
+
     }
 }
